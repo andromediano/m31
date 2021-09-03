@@ -1,8 +1,8 @@
 {{ partial "header.html" . }}
 
   <div class="article-cards">
-    {{ $page := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
-    {{ range $page.Pages }}
+    {{ $page := .Paginate .Pages }}
+    {{ range sort $page.Pages "Params.seriesOrder" }}
       {{ partial "article-card.html" . }}
     {{ end }}
   </div>

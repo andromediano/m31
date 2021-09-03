@@ -1,0 +1,35 @@
+<div class="article-content">
+
+  <!--
+   + https://gohugo.io/content-management/toc/
+   `-->
+  <aside>
+    {{ .TableOfContents }}
+  </aside>
+  <hr/>
+
+  <!--
+   +
+   `-->
+  {{/* with .Params.Image }}
+    <img class="img-thumbnail" src="{{ . }}"/>
+    <hr/>
+  {{ end */}}
+
+  {{ .Content }}
+
+  <!--
+   + https://gohugo.io/content-management/related/
+   `-->
+  {{ $related := .Site.RegularPages.Related . | first 5 }}
+  {{ with $related }}
+  <h2>관련글</h2>
+  <ul>
+    {{ range . }}
+    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+    {{ end }}
+  </ul>
+  <hr/>
+  {{ end }}
+
+</div>

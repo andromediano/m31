@@ -1,0 +1,24 @@
+
+pre.chroma, div.chroma {
+    display: block;
+    overflow: auto;
+    margin-bottom: 0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.highlight > div.chroma {
+    padding: 1em;
+}
+.highlight > pre.chroma {
+    padding: 1em;
+}
+.highlight {
+    margin-bottom: 1em;
+}
+
+blockquote {
+    margin-left: 20px;
+    padding-left: 10px;
+    border-left: 5px solid #cfcfcf;
+}

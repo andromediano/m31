@@ -1,0 +1,59 @@
+/* <![CDATA[ */
+/*
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,400,700|Raleway:300,300i,400,400i,500,500i,700,700i&display=swap&subset=korean');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Roboto&display=swap');
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/*
+ * 공통스타일
+ *  웹폰트 적용
+ *  https://fonts.google.com
+ */
+body {
+    padding-top: 2em;
+    font-family: 'Roboto', sans-serif;
+    /*
+    font-family: 'Raleway', 'Noto Sans KR', sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Nanum Myeongjo', serif;
+    background-color: #f8f9fa!important;
+    background-color: #3c4556;
+    */
+}
+
+.logo {
+    margin-bottom: 1em;
+}
+
+.site-navigation {
+    font-weight: bolder;
+}
+
+.article-cards .card-body time {
+    color: #3c4556;
+}
+.article-cards .card-title a {
+    color: #000000;
+}
+
+.footer {
+    padding: 1em;
+    background-color: #2a2c37;
+}
+
+/*
+ * SINGLE PAGE
+ */
+.article-header {
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    border-bottom: 1px dashed #cfcfcf;
+}
+.article-content {
+}
+.article-content p img {width: 100%;}
+.article-footer {
+}
+
+/* ]]> */

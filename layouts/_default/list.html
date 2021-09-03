@@ -1,0 +1,14 @@
+{{ partial "header.html" . }}
+
+  <div class="article-cards">
+    {{ $page := .Paginate .Pages }}
+    {{ range $page.Pages }}
+      {{ partial "article-card.html" . }}
+    {{ end }}
+  </div>
+
+  <div class="nav justify-content-center">
+    {{ template "_internal/pagination.html" . }}
+  </div>
+
+{{ partial "footer.html" . }}
