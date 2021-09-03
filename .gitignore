@@ -1,0 +1,33 @@
+# OS Created
+.DS_Store
+
+# IDE Settings
+.idea
+.ipr
+*.iml
+.settings
+.project
+.classpath
+
+# Gradle project-specific cache directory
+.gradle
+
+# Compile & Build
+target
+build
+bin
+*.class
+classes
+*.[oa]
+
+# Log, Backup, Swap files
+*.log
+*.bak
+*.sw?
+*~
+
+# SCM directories
+.svn
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*

@@ -1,0 +1,15 @@
+<header class="article-header">
+
+  <h1>{{ .Title }}</h1>
+
+  {{ if .Description }}
+    <p>{{ .Description }}</p>
+  {{ end }}
+
+  <b>문서생성일</b>: <time>{{ .PublishDate.Format "2006-01-02" }}</time>
+  {{ if ne .PublishDate .Lastmod }}
+    / <b>최근수정일</b>: <time>{{ .Lastmod.Format "2006-01-02" }}</time>
+  {{ end }}
+  by <a href="{{ .Params.profile | default .Site.Author.profile | default "#" }}">{{ .Params.author | default .Site.Author.name }}</a>
+
+</header>
