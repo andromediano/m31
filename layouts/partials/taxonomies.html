@@ -14,12 +14,12 @@
     <div><a href="{{ .Page.Permalink }}">{{ .Page.Title }} <span class="badge badge-light">{{ .Count }}</span></a></div>
   {{ end }}
 </section>
-<hr/>
+<br/>
 
 <h4>Tags</h4>
 <section>
   {{ range .Site.Taxonomies.tags }}
-    <a href="{{ .Page.Permalink }}" class="badge badge-success">#{{ .Page.Title }} <span class="badge badge-light">{{ .Count }}</span></a>
+    <a href="{{ .Page.Permalink }}" class="badge aside-tag">#{{ .Page.Title }} <span class="badge badge-light">{{ .Count }}</span></a>
   {{ end }}
 </section>
 <hr/>

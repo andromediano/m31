@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,400,700|Raleway:300,300i,400,400i,500,500i,700,700i&display=swap&subset=korean');
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Roboto&display=swap');
 */
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap');
 
 /*
  * 공통스타일
@@ -12,7 +12,7 @@
  */
 body {
     padding-top: 2em;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
     /*
     font-family: 'Raleway', 'Noto Sans KR', sans-serif;
     font-family: 'Nanum Gothic', sans-serif;
@@ -36,10 +36,36 @@ body {
 .article-cards .card-title a {
     color: #000000;
 }
+.article-tag {
+    padding: .4em;
+    background-color: #6f1e51;
+    color: #ffffff;
+}
 
 .footer {
-    padding: 1em;
-    background-color: #2a2c37;
+    padding: 2em;
+    color: #ffffff;
+    background-color: #130f40;
+}
+
+.aside-tag {
+    background-color: #82ccdd;
+    color: #0c2461;
+}
+
+/*
+ * article content
+ */
+.article-content h1 {font-size: 2.0em; color: #130f40;}
+.article-content h2 {font-size: 1.8em; color: #130f40;}
+.article-content h2::before {content: "❑ ";}
+.article-content h3 {font-size: 1.6em; color: #130f40;}
+.article-content h3::before {content: "➜ ";}
+.article-content h4 {font-size: 1.4em; color: #130f40;}
+.article-content h4::before {content: "➪ ";}
+.article-content h5 {font-size: 1.2em; color: #130f40;}
+.article-content h5::before {content: "➾ ";}
+.article-content h6 {font-size: 1.0em; color: #130f40;}
 }
 
 /*

@@ -1,6 +1,8 @@
 <header class="article-header">
 
-  <h1>{{ .Title }}</h1>
+  <h1>
+    {{ if .Draft }} <code title="DRAFT">[DRAFT{{ if .Params.seriesOrder }}/{{ .Params.seriesOrder }}{{ end }}]</code> {{ end }}
+    {{ .Title }}</h1>
 
   {{ if .Description }}
     <p>{{ .Description }}</p>
